@@ -1,5 +1,5 @@
 module.exports = function check(str, bracketsConfig) {
-    let stack = [];
+    const stack = [];
     for (let index = 0; index < str.length; index++) {
         let stack_last = stack[stack.length - 1];
         for (let element = 0; element < bracketsConfig.length; element++) {
